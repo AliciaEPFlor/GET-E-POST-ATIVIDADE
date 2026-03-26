@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div align = "center">
+<div align>
 <h1> "GET" E "POST" ATIVIDADE </h1>
 </div> 
 <hr> 
@@ -15,7 +15,17 @@
 <figure>
   <figcaption>
   <img width="884" height="344" alt="image" src="https://github.com/user-attachments/assets/1ccf081d-538e-4fe2-8b11-63e6d959d802" />
+    <br>
+  <i>Metodo GET via POSTMAN</i>
   </figcaption>
 </figure>
-
+<hr>
+<div align = "justify">
+<h2>MÉTODO POST</h2>
+<figure>
+  <figcaption>
+  <img <img width="979" height="688" alt="image" src="https://github.com/user-attachments/assets/684df0a9-669e-4f54-bdf9-17ffab3303cf" />
+  <i>Metodo POST via POSTMAN</i>
+  </figcaption>
+</figure>
 
