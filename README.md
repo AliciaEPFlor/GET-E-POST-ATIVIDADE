@@ -2,6 +2,7 @@
 <div align = "center">
 <h1> "GET" E "POST" ATIVIDADE </h1>
 </div> 
+<hr> 
 <div align = "justify">
 <h2> DESCRIÇÃO DO PROJETO </h2>
 <p> Servidor Backens, onde é possivel realizar dois tipos de requisições em HTTP: </p>
