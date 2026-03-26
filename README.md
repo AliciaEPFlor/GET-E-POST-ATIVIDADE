@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div = "center">
+<div align = "center">
 <h1> "GET" E "POST" ATIVIDADE </h1>
 </div> 
 ## Aula 19/03/2026
