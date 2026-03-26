@@ -14,7 +14,7 @@
 <h2>MÉTODO GET </h2>
 <figure>
   <figcaption>
-    img width="1085" height="921" alt="image" src="https://github.com/user-attachments/assets/880c7ebc-fe03-4cf0-a06a-39da4b434d5b" />
+  <img width="884" height="344" alt="image" src="https://github.com/user-attachments/assets/1ccf081d-538e-4fe2-8b11-63e6d959d802" />
   </figcaption>
 </figure>
 
