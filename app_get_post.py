@@ -3,17 +3,20 @@ from http.server import HTTPServer,BaseHTTPRequestHandler
 class Servidor(BaseHTTPRequestHandler):
     
     def do_POST(self):
-        tamanho = int(self.headers['content-length'])
-    dado = self.file.read(tamanho)
-    print("Dados recebidos:  ", dado.decode())
+     self.send_response(200)
+     self.end_headers()
+     self.wfile.write(b"POST RECEBIDO")
 
-    self.send_response(200)
-    self.end_headers()
-    self.wfile.write(b"POST RECEBIDO")
+# Método POST (novo)
+def do_POST(self):
+   
+   tamanho = int(self.headers['Content-Lenght'])
 
-    def do_GET(self):
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"Servidor WEB funcionando! Bem vindo!")
+   dados = self.rfile.read(tamanho)
 
-#Esse código cria um servidor local para rodar HTTP, GET E POST
+   print("Dados recebidos:", dados.decode())
+
+   self.send_response(200)
+   self.end_headers()
+   self.wfile.write(b"Post recebido")
+       
