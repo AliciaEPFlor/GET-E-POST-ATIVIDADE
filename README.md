@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<div align>
-<h1> Anotações das Aulas de Sistemas Operacionais </h1>
 </div> 
 <hr> 
 <div align = "justify">
