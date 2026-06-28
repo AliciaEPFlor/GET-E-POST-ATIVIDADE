@@ -87,13 +87,18 @@ def do_GET(self):
 <figure>
   <figcaption>
   <img <img width="979" height="688" alt="image" src="https://github.com/user-attachments/assets/684df0a9-669e-4f54-bdf9-17ffab3303cf" />
-  <i>Metodo POST via POSTMAN</i>
+  <i>Método POST via POSTMAN - Resposta: "Servidor funcionando com POST"</i>
+                </figcaption>
+            </figure>
+            <p><strong>Como testar:</strong> Abra o Postman, faça uma requisição POST para <code>http://localhost:8000</code> e veja a resposta do servidor.</p>
+        </div>
+    </div>
   </figcaption>
 </figure>
 <h1>📌 O que está sendo feito neste código</h1>
   
-    <p>Este é um servidor HTTP básico em Python, criado para responder a requisições do tipo <strong>POST</strong>.
-    A seguir está a explicação de cada parte do código.</p>
+    Este é um servidor HTTP básico em Python, criado para responder a requisições do tipo <strong>POST</strong>.
+    A seguir está a explicação de cada parte do código.
         
 <h2>📦 Linha 1: Importação dos módulos</h2>
 
@@ -101,8 +106,8 @@ def do_GET(self):
 
     Importa duas classes essenciais do módulo <code>http.server:
    
-        HTTPServer</strong>: Cria e gerencia o servidor web (escuta em uma porta e aceita conexões).
-        BaseHTTPRequestHandler</strong>: Classe base responsável por definir como tratar requisições HTTP.
+        HTTPServer Cria e gerencia o servidor web (escuta em uma porta e aceita conexões).
+        BaseHTTPRequestHandler: Classe base responsável por definir como tratar requisições HTTP.
         
 <h2>🏗️ Linha 3: Definição da classe Servidor</h2>
 
@@ -112,7 +117,7 @@ def do_GET(self):
     BaseHTTPRequestHandler. Dessa forma, ela pode sobrescrever ou
     estender o comportamento padrão do manipulador de requisições HTTP.
 
-    <h2>🔧 Linhas 4–8: Método POST</h2>
+<h2>🔧 Linhas 4–8: Método POST</h2>
 
     def do_POST(self):
         tamanho = int(self.headers['Content-Length'])
@@ -124,7 +129,7 @@ def do_GET(self):
 
   <h3>Explicação:</h3>
  
-        do_POST(self):</strong> Método chamado automaticamente quando o
+        do_POST(self): Método chamado automaticamente quando o
             servidor recebe uma requisição HTTP do tipo POST
             
         tamanho = int(self.headers['Content-Length']):
@@ -145,7 +150,7 @@ def do_GET(self):
             Finaliza o envio dos cabeçalhos da resposta HTTP.
   
         self.wfile.write(b"POST recebido"):
-            Envia o conteúdo da resposta ao cliente. O prefixo <em>b</em> indica que a mensagem é enviada
+            Envia o conteúdo da resposta ao cliente. O prefixo *b* indica que a mensagem é enviada
             em formato de bytes. O cliente receberá a mensagem: "POST recebido".
       
   <h2>🎯 Resumo do funcionamento</h2>
@@ -154,12 +159,12 @@ def do_GET(self):
  
         Cria um servidor HTTP simples utilizando Python.
         Fica aguardando conexões em uma porta definida.
-        Quando recebe uma requisição do tipo <em>POST</em>:
+        Quando recebe uma requisição do tipo POST:
             Lê o tamanho dos dados enviados;
             Captura os dados enviados pelo cliente;
             Exibe os dados no terminal do servidor;
             Retorna o código 200 (OK);
             Finaliza os cabeçalhos HTTP;
-            Envia ao cliente a mensagem <strong>"POST recebido";
+            Envia ao cliente a mensagem "POST recebido";
 </body>
 </html>
